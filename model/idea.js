@@ -12,7 +12,6 @@ var ideaSchema = new mongoose.Schema({
   author: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Users',
-    default: 'Anonymous',
   }
 });
 
