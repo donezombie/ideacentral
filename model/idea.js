@@ -8,6 +8,11 @@ var ideaSchema = new mongoose.Schema({
   like: {
     type: Array,
     default: [],
+  },
+  author: {
+    type: Schema.Types.ObjectId,
+    ref: 'Users',
+    default: 'Anonymous',
   }
 });
 
