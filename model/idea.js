@@ -10,7 +10,7 @@ var ideaSchema = new mongoose.Schema({
     default: [],
   },
   author: {
-    type: Schema.Types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId,
     ref: 'Users',
     default: 'Anonymous',
   }
